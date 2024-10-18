@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body class="bg-black text-white">
+    <!-- Cursor Code -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header>
+      <nav>
+        <div class="left">AbdulRehman's Portfolio</div>
+        <img src="Images/menu.svg" alt="" class="menu-icon" onclick="toggleMenu()">
+        <div class="right">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    </header>
+
+    <main>
+      <!-- First Section -->
+
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="text-green">AbdulRehman</span>
+          <div>and I am passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="Images/bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+
+      <!-- Second Section -->
+
+      <section class="secondsection">
+        <span class="text-gray">Who I am</span>
+        <h1>About Me</h1>
+        <center>
+          Hey there, I'm AbdulRehman, and I'm all about crafting digital magic
+          as a full stack web developer and web designer. With a year under my
+          belt in the industry, I've honed my skills in both the nuts and bolts
+          of coding and the artistry of design. Whether it's building intuitive
+          user interfaces or architecting robust back-end systems, I thrive on
+          the challenge of creating websites that not only look stunning but
+          also function flawlessly. I'm passionate about staying on the cutting
+          edge of technology and design trends, always eager to learn and grow.
+          Got a project in mind? Let's team up and turn your ideas into reality!
+        </center>
+      </section>
+      <hr>
+      <br>
+
+      <!-- Third Section -->
+
+      <section class="thirdsection">
+        <h1 class="text-center mb-5">My Skills</h1>
+        <h2><a href="#">If You Want to See My Skills Click Here!</a></h2>
+          <div class="skill-box hide">
+              <div class="skill-1">
+                <center>
+                  <img src="Images/html.png" alt="html" />
+                </center>
+                <p>HTML</p>
+              </div>
+              <div class="skill-1">
+                <center>
+                  <img src="Images/css.png" alt="html" />
+                </center>
+                <p>CSS</p>
+              </div>
+              <div class="skill-1">
+                <center>
+                  <img src="Images/js.png" alt="html" />
+                </center>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-1">
+                <center>
+                  <img
+                    src="Images/bootstrap.svg"
+                    alt="html"
+                  />
+                </center>
+                <p>Bootstrap</p>
+              </div>
+            </div>
+          </div>
+
+        <!-- Second Row -->
+
+        <div class="skill-box hide">
+          <div class="skill-1">
+            <center><img src="Images/tailwind.png" alt="html" /></center>
+            <p>Tailwind</p>
+          </div>
+          <div class="skill-1">
+            <center><img src="Images/Vue.png" alt="html" /></center>
+            <p>Vue Js</p>
+          </div>
+          <div class="skill-1">
+            <center><img src="Images/Git.png" alt="html" /></center>
+            <p>Git Source Control</p>
+          </div>
+          <div class="skill-1">
+            <center><img src="Images/django.png" alt="html" /></center>
+            <p>Django</p>
+          </div>
+        </div>
+
+         <!-- Third Row  -->
+
+        <div class="skill-box2 hide">
+          <div class="skill-1">
+            <center><img src="Images/python.png" alt="html" /></center>
+            <p>Python</p>
+          </div>
+          <div class="skill-1">
+            <center><img src="Images/mysql.png" alt="html" /></center>
+            <p>MySql</p>
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
