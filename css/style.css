@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: none;
+}
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Navbar */
+
+.show {
+  display: block !important;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: green;
+  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav .left {
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+  font-weight: 700;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+}
+nav ul li a:hover {
+  color: black;
+}
+nav img {
+  display: none;
+}
+
+/* Main */
+
+main hr {
+  border: 0;
+  background-color: green;
+  height: 1.2px;
+  margin: 40px 84px;
+}
+.left {
+  font-size: 1.5rem;
+}
+
+/* First Section */
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30vh 0;
+}
+.firstsection > div {
+  width: 30%;
+}
+.leftsection {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.rightsection img {
+  width: 80%;
+}
+.text-green {
+  color: green;
+}
+#element {
+  color: green;
+}
+
+/* Second Section */
+
+.secondsection {
+  padding: 10vw;
+}
+.secondsection h1 {
+  font-size: 1.9rem;
+  text-decoration: underline green;
+}
+.text-gray {
+  color: gray;
+}
+.secondsection center {
+  margin: 45px 0;
+  font-size: 1.4rem;
+  color: rgb(99, 255, 99);
+}
+.secondsection hr {
+  border: 0;
+  background-color: green;
+  height: 1.2px;
+  margin: 20px 84px;
+}
+
+/* Third section */
+
+.outer-part h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 5vw;
+  margin-bottom: 2vh;
+  text-decoration: underline green;
+}
+
+.first-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-line .box1 {
+  border: 2px solid green;
+  padding: 5vw;
+  border-radius: 20px;
+  margin: 2.5vw;
+  transition: .2s;
+}
+
+.first-line .box1:hover {
+  background-color: green;
+}
+
+.first-line .box1 img{
+  width: 100px;
+  height: auto;
+}
+
+.first-line .box1 p{
+  text-align: center;
+}
+
+/* Footer*/
+
+.outer {
+  height: 45vh;
+  width: 100%;
+}
+
+.outer h2 {
+  text-align: center;
+  text-decoration: underline green;
+  font-size: 3rem;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vw;
+  font-size: 1.6rem;
+}
+
+.footer-link a {
+  margin-left: 2.2vw;
+  font-weight: 700;
+  color: green;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  color: greenyellow;
+  text-decoration: underline white;
+}
+
+.web-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw;
+}
+
+.web-link a {
+  margin-left: 3vw;
+}
+
+.web-link a img{
+  width: 35px;
+  height: 35px;
+}
+
+
+.outer hr {
+  border: 0;
+  background-color: green;
+  height: 1.2px;
+  margin: 20px 84px;
+}
+
+/* Contact Us */
+
+#sec-main {
+  padding: 6vw;
+  margin-top: 22vh;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #3e8e41;
+}
+
+#hr {
+  border: 0;
+  background-color: green;
+  height: 1.2px;
+  margin: 40px 84px;
+}
