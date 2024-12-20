@@ -22,15 +22,12 @@ window.addEventListener("mousemove", function (e) {
 });
 // Cursor Code End
 
-// Setup and start animation!
 
-var typed = new Typed("#element", {
-  strings: ["Web Developer.", "SEO Expert.", "Web Designer.", "Video Editor."],
-  typeSpeed: 50,
-  loop: true,
-});
+// Navbar Responsive
 
 document.querySelector(".menu-icon").addEventListener("click", () => {
   const navMenu = document.querySelector(".menu");
   navMenu.classList.toggle("show");
 });
+
+// Navbar Responsive End
