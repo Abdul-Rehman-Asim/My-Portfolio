@@ -1,9 +1,3 @@
-@media screen and (max-width: 3000px) {
-  .first-line {
-    flex-wrap: wrap;
-  }
-}
-
 @media screen and (max-width: 1010px) {
   .leftsection {
     font-size: 1.8rem;
@@ -78,5 +72,8 @@
   }
   .secondsection center {
     font-size: 0.8rem;
+  }
+  #element {
+    font-size: 1.1rem;
   }
 }
