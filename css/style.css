@@ -42,18 +42,17 @@ nav {
   align-items: center;
   height: 80px;
   background-color: green;
-  position: relative;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
 }
 nav .left {
+  font-size: 1.5rem;
   font-weight: 700;
 }
 nav ul {
   display: flex;
-  justify-content: center;
 }
 nav ul li {
   list-style: none;
@@ -79,9 +78,6 @@ main hr {
   background-color: green;
   height: 1.2px;
   margin: 40px 84px;
-}
-.left {
-  font-size: 1.5rem;
 }
 
 /* First Section */
@@ -162,11 +158,6 @@ main hr {
   background-color: green;
 }
 
-.first-line .box1 img {
-  width: 100px;
-  height: auto;
-}
-
 .first-line .box1 p {
   text-align: center;
 }
@@ -178,7 +169,6 @@ main hr {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
-  margin-bottom: 2vh;
   text-decoration: underline green;
 }
 
@@ -260,7 +250,6 @@ main hr {
 }
 .inner-cards p {
   text-align: center;
-  color: white;
   font-size: 1.2rem;
   margin-top: 10px;
 }
