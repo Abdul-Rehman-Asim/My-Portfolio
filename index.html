@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
     <title>AbdulRehman's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body class="bg-black text-white">
     <!-- Cursor Code -->
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
+    <!-- <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div> -->
 
     <header>
       <nav>
@@ -33,9 +35,11 @@
 
       <section class="firstsection">
         <div class="leftsection">
-          Hi, My name is <span class="text-green">AbdulRehman</span>
+          Hi, My name is <span class="text-blue">AbdulRehman</span>
           <div>and I am passionate</div>
           <span id="element"></span>
+          <br>
+          <button class="btnCV">Download CV</button>
         </div>
         <div class="rightsection">
           <img src="Images/bg.png" alt="" />
@@ -59,6 +63,9 @@
           edge of technology and design trends, always eager to learn and grow.
           Got a project in mind? Let's team up and turn your ideas into reality!
         </center>
+        <div id="outer-btn">
+          <a href="about.html" class="view-more">View More</a>
+        </div>
       </section>
       <hr>
       <br>
@@ -118,17 +125,17 @@
         <h2>Services</h2>
         <div class="outer-card">
           <div class="service-card">
-            <img src="Images/code.svg" alt="code">
+            <i class="fa-solid fa-code"></i>
             <h3>Web Development</h3>
             <p>I create modern, fast, and user-friendly websites to help your business grow online.</p>
           </div>
           <div class="service-card">
-            <img src="Images/paint.svg" alt="code">
+            <i class="fa-solid fa-paintbrush"></i>
             <h3>Web Designing</h3>
             <p>I design beautiful, clean, and professional websites that leave a lasting impression.</p>
           </div>
           <div class="service-card">
-            <img src="Images/edit.svg" alt="code">
+            <i class="fa-solid fa-photo-film"></i>
             <h3>Video Editing</h3>
             <p>I deliver professional video editing for stunning, engaging, and visually captivating results.</p>
           </div>
@@ -173,7 +180,6 @@
           <a href="https://www.fiverr.com/salmanmughal344?public_mode=true" target="_blank"><img src="Images/fiverr.svg" alt=""></a>
           <a href="https://www.upwork.com/freelancers/~014bc7e7228fe32cfa" target="_blank"><img src="Images/upwork.svg" alt=""></a>
         </div>
-        <hr/>
       </div>
     </footer>
   </body>

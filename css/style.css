@@ -4,31 +4,13 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: black;
-  color: white;
+  background-color: #FFFFFF; /* Soft white background */
+  color: #333333; /* Charcoal gray text */
   font-family: "Poppins", sans-serif;
-  cursor: none;
-}
-.cursor-dot {
-  width: 5px;
-  height: 5px;
-  background-color: white;
-}
-.cursor-outline {
-  width: 30px;
-  height: 30px;
-  border: 2px solid hsla(0, 0%, 100%, 0.5);
-}
-.cursor-dot,
-.cursor-outline {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 2;
-  pointer-events: none;
 }
 
 /* Navbar */
@@ -41,7 +23,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  background-color: green;
+  background-color: #1A73E8; /* Deep Blue background for navbar */
+  color: white;
   position: fixed;
   top: 0;
   width: 100%;
@@ -65,7 +48,7 @@ nav ul li a {
   transition: 0.3s;
 }
 nav ul li a:hover {
-  color: black;
+  color: #FFD700; /* Gold on hover */
 }
 nav img {
   display: none;
@@ -75,7 +58,7 @@ nav img {
 
 main hr {
   border: 0;
-  background-color: green;
+  background-color: #1A73E8; /* Deep Blue for divider */
   height: 1.2px;
   margin: 40px 84px;
 }
@@ -95,11 +78,34 @@ main hr {
   font-size: 2.3rem;
   font-weight: 700;
 }
-.text-green {
-  color: green;
+.text-blue {
+  color: #1A73E8; /* Deep Blue text */
 }
 #element {
-  color: green;
+  color: #1A73E8; /* Deep Blue for highlighted text */
+}
+
+.rightsection img {
+  border: 3px solid #1A73E8;
+  border-radius: 50%;
+  padding: 2vw;
+  box-shadow: 0 0 20px #1A73E8, 0 0 30px #1A73E8, 0 0 40px #1A73E8, 0 0 50px
+}
+
+.btnCV {
+  padding: 2vh 3vw;
+  font-weight: 600;
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btnCV:hover {
+  background-color: #1A73E8;
+  color: white;
 }
 
 /* Second Section */
@@ -109,7 +115,7 @@ main hr {
 }
 .secondsection h1 {
   font-size: 1.9rem;
-  text-decoration: underline green;
+  text-decoration: underline #1A73E8; /* Deep Blue underline */
 }
 .text-gray {
   color: gray;
@@ -117,23 +123,46 @@ main hr {
 .secondsection center {
   margin: 45px 0;
   font-size: 1.4rem;
-  color: rgb(99, 255, 99);
+  color: #333333; /* Charcoal gray text */
 }
 .secondsection hr {
   border: 0;
-  background-color: green;
+  background-color: #1A73E8; /* Deep Blue divider */
   height: 1.2px;
   margin: 20px 84px;
 }
 
-/* Third section */
+#outer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-more {
+  padding: 2vh 3vw;
+  font-weight: 600;
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.view-more:hover {
+  background-color: #1A73E8;
+  color: white;
+}
+
+/* Third Section */
 
 .outer-part h2 {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
   margin-bottom: 2vh;
-  text-decoration: underline green;
+  text-decoration: underline #1A73E8; /* Deep Blue underline */
 }
 
 .first-line {
@@ -144,15 +173,17 @@ main hr {
 }
 
 .first-line .box1 {
-  border: 2px solid green;
+  border: 2px solid #1A73E8; /* Deep Blue border */
   padding: 5vw;
   border-radius: 20px;
   margin: 2.5vw;
   transition: 0.2s;
+  font-weight: 600;
 }
 
 .first-line .box1:hover {
-  background-color: green;
+  background-color: #1A73E8; /* Deep Blue background on hover */
+  color: white;
 }
 
 .first-line .box1 p {
@@ -161,12 +192,11 @@ main hr {
 
 /* Services */
 
-
 .service h2 {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
-  text-decoration: underline green;
+  text-decoration: underline #1A73E8; /* Deep Blue underline */
 }
 
 .outer-card {
@@ -178,7 +208,7 @@ main hr {
 }
 
 .service-card {
-  border: 2px solid green;
+  border: 2px solid #1A73E8; /* Deep Blue border */
   padding: 2vw;
   width: 90%;
   max-width: 300px;
@@ -189,14 +219,13 @@ main hr {
 }
 
 .service-card:hover {
-  background-color: #3e8e41;
+  background-color: #1A73E8; /* Deep Blue on hover */
+  color: white;
 }
 
-
-.service-card img {
+.service-card i {
   margin-top: 1.2vh;
-  width: 40px;
-  height: 40px;
+  font-size: 2rem;
 }
 
 .service-card h3 {
@@ -218,7 +247,7 @@ main hr {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
-  text-decoration: underline green;
+  text-decoration: underline #1A73E8; /* Deep Blue underline */
 }
 .cards {
   margin: 10vh 0;
@@ -229,11 +258,11 @@ main hr {
 }
 .cards .inner-cards {
   margin: 2.5vw;
-  border: 2px solid green;
+  border: 2px solid #1A73E8; /* Deep Blue border */
   border-radius: 20px;
   width: 90%;
   max-width: 300px;
-  height: auto; 
+  height: auto;
   padding: 1vw;
 }
 .inner-cards img {
@@ -255,7 +284,7 @@ main hr {
   text-align: center;
   padding: 10px;
   background-color: white;
-  color: green;
+  color: #1A73E8; /* Deep Blue text */
   font-weight: 700;
   border-radius: 10px;
   margin-top: 10px;
@@ -264,9 +293,9 @@ main hr {
 }
 
 .inner-cards a:hover {
-  background-color: green;
+  background-color: #1A73E8; /* Deep Blue background */
   color: white;
-} 
+}
 
 /* Footer*/
 
@@ -277,7 +306,7 @@ main hr {
 
 .outer h2 {
   text-align: center;
-  text-decoration: underline green;
+  text-decoration: underline #1A73E8; /* Deep Blue underline */
   font-size: 3rem;
 }
 
@@ -292,13 +321,13 @@ main hr {
 .footer-link a {
   margin-left: 2.2vw;
   font-weight: 700;
-  color: green;
+  color: #1A73E8; /* Deep Blue */
   transition: 0.3s;
   text-decoration: none;
 }
 
 .footer-link a:hover {
-  color: greenyellow;
+  color: #FFD700; /* Gold on hover */
   text-decoration: underline white;
 }
 
@@ -322,16 +351,9 @@ main hr {
 }
 
 .web-link a img:hover {
-  background-color: green;
-  border: 2px solid green;
+  background-color: #1A73E8; /* Deep Blue */
+  border: 2px solid #1A73E8; /* Deep Blue border */
   transition: 0.3s;
-}
-
-.outer hr {
-  border: 0;
-  background-color: green;
-  height: 1.2px;
-  margin: 20px 84px;
 }
 
 /* Contact Us */
@@ -369,7 +391,7 @@ main hr {
 }
 
 .contact-form button {
-  background-color: #4caf50;
+  background-color: #1A73E8; /* Deep Blue button */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -378,12 +400,12 @@ main hr {
 }
 
 .contact-form button:hover {
-  background-color: #3e8e41;
+  background-color: #FFD700; /* Gold on hover */
 }
 
 #hr {
   border: 0;
-  background-color: green;
+  background-color: #1A73E8; /* Deep Blue divider */
   height: 1.2px;
   margin: 40px 84px;
 }

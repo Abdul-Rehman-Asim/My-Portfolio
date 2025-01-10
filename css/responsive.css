@@ -1,29 +1,75 @@
+/* Global Settings (e.g., Variables, General Styling) */
+:root {
+  --primary-color: #1A73E8;
+  --font-size-large: 1.8rem;
+  --font-size-medium: 1.4rem;
+  --font-size-small: 1.2rem;
+  --font-size-tiny: 0.9rem;
+  --btn-padding: 2.5vh 3vw;
+  --tablet-padding: 4vw;
+  --mobile-padding: 3vw;
+}
+
+/* General Improvements */
 @media screen and (max-width: 1010px) {
   .leftsection {
-    font-size: 1.8rem;
+    font-size: var(--font-size-medium);
+  }
+  .rightsection img {
+    width: 25vw;
   }
 }
 
-@media screen and (max-width: 870px) {
+/* Tablet Improvements */
+@media screen and (max-width: 768px) {
+  /* Refined Layout for Tablet */
   .firstsection {
     flex-direction: column-reverse;
     margin: 20vh 0;
+    justify-content: center; /* Ensure content is centered */
+    align-items: center; /* Center all content vertically and horizontally */
   }
-  .rightsection img {
+
+  .rightsection {
+    display: flex;
+    justify-content: center; /* Horizontally center image */
+    align-items: center; /* Vertically center image */
+    width: 100%; /* Ensure the section spans the full width */
     margin-bottom: 10vh;
   }
+
+  .rightsection img {
+    width: 45vw; /* Adjust the image size */
+    max-width: 100%; /* Prevent the image from exceeding its container */
+    height: auto; /* Keep the aspect ratio of the image */
+  }
+
   .outer h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    text-align: center; /* Center align for better readability */
   }
+
   .leftsection {
-    font-size: 1.4rem;
+    font-size: var(--font-size-medium);
+    text-align: center; /* Center text for smaller screens */
   }
+
   .firstsection > div {
-    width: 48%;
+    width: 100%; /* Make sections take full width on smaller tablets */
+    margin-bottom: 10vh; /* Add spacing between sections */
   }
+
+  /* Button Styling */
+  .btnCV {
+    padding: var(--btn-padding);
+    margin: 10%; /* Reduced margin to give more space for content */
+    font-size: 1.2rem; /* Slightly larger text for buttons */
+  }
+
+  /* Navigation Updates */
   nav {
-    height: 5vh;
-    padding: 10px;
+    height: 7vh;
+    padding: 15px;
   }
   nav ul {
     display: none;
@@ -31,49 +77,89 @@
   nav ul.show {
     flex-direction: column;
     position: absolute;
-    background-color: green;
+    background-color: var(--primary-color);
     top: 100%;
     left: 0;
     width: 100%;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.6s ease-in-out;
   }
   nav ul li {
-    margin: 10px 0;
+    margin: 12px 0;
   }
   nav img {
     display: inline-block;
+    max-width: 130px; /* Smaller max-width for logo */
+    margin-bottom: 10px;
   }
+
+  /* Flexbox for Outer Sections */
   .outer {
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: auto; /* Allow height to be more dynamic */
+    margin-bottom: 15vh;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .secondsection center {
-    font-size: 0.7rem;
-  }
-  .left {
-    font-size: 1.2rem;
-  }
-  nav img {
-    height: 25px;
-  }
-}
-
+/* Mobile Improvements */
 @media screen and (max-width: 500px) {
   .footer-link {
     font-size: 1.1rem;
   }
   .rightsection img {
-    width: 45vw;
+    width: 50vw;
   }
   .secondsection center {
-    font-size: 0.8rem;
+    font-size: var(--font-size-tiny);
   }
   #element {
     font-size: 1.1rem;
+  }
+  .btnCV {
+    padding: 2vh 3vw;
+    margin: 5%;
+  }
+  .outer h2 {
+    font-size: 1.8rem;
+  }
+  .nav-mobile {
+    display: block;
+  }
+  .nav-desktop {
+    display: none;
+  }
+}
+
+/* Additional Enhancements for Navigation */
+@media screen and (max-width: 700px) {
+  nav {
+    padding: 15px;
+  }
+  nav ul.show {
+    top: 50px;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav img {
+    max-width: 150px;
+  }
+}
+
+/* Improved Navigation Transitions for Mobile */
+@media screen and (max-width: 500px) {
+  nav ul.show {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
 }
