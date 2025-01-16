@@ -87,7 +87,7 @@
   nav ul li {
     margin: 12px 0;
   }
-  nav img {
+  nav #img {
     display: inline-block;
     max-width: 130px; /* Smaller max-width for logo */
     margin-bottom: 10px;
@@ -145,7 +145,7 @@
     text-align: center;
     padding: 10px 0;
   }
-  nav img {
+  nav #img {
     max-width: 150px;
   }
 }

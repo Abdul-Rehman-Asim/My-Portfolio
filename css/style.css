@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --white: #ffffff;
+  --charcoal-gray: #333333;
+  --foot: white;
+  --deep-blue: #1a73e8;
+  --gold: #ffd700;
+  --gray: gray;
 
+.dark-theme{
+  --white: #000;
+  --charcoal-gray: #fff;
+}
+  
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +21,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #FFFFFF; /* Soft white background */
-  color: #333333; /* Charcoal gray text */
+  background-color: var(--white); /* Soft white background */
+  color: var(--charcoal-gray); /* Charcoal gray text */
   font-family: "Poppins", sans-serif;
+} /* Navbar */
+#icon {
+  width: 30px;
+  cursor: pointer;
 }
-
-/* Navbar */
-
 .show {
   display: block !important;
 }
@@ -23,7 +37,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  background-color: #1A73E8; /* Deep Blue background for navbar */
+  background-color: var(--deep-blue); /* Deep Blue background for navbar */
   color: white;
   position: fixed;
   top: 0;
@@ -36,6 +50,7 @@ nav .left {
 }
 nav ul {
   display: flex;
+  align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -48,23 +63,17 @@ nav ul li a {
   transition: 0.3s;
 }
 nav ul li a:hover {
-  color: #FFD700; /* Gold on hover */
+  color: var(--gold); /* Gold on hover */
 }
-nav img {
+nav #img {
   display: none;
-}
-
-/* Main */
-
+} /* Main */
 main hr {
   border: 0;
-  background-color: #1A73E8; /* Deep Blue for divider */
+  background-color: var(--deep-blue); /* Deep Blue for divider */
   height: 1.2px;
   margin: 40px 84px;
-}
-
-/* First Section */
-
+} /* First Section */
 .firstsection {
   display: flex;
   justify-content: space-around;
@@ -79,126 +88,107 @@ main hr {
   font-weight: 700;
 }
 .text-blue {
-  color: #1A73E8; /* Deep Blue text */
+  color: var(--deep-blue); /* Deep Blue text */
 }
 #element {
-  color: #1A73E8; /* Deep Blue for highlighted text */
+  color: var(--deep-blue); /* Deep Blue for highlighted text */
 }
-
 .rightsection img {
-  border: 3px solid #1A73E8;
+  border: 3px solid var(--deep-blue);
   border-radius: 50%;
   padding: 2vw;
-  box-shadow: 0 0 20px #1A73E8, 0 0 30px #1A73E8, 0 0 40px #1A73E8, 0 0 50px
+  box-shadow: 0 0 20px var(--deep-blue), 0 0 30px var(--deep-blue),
+    0 0 40px var(--deep-blue), 0 0 50px;
 }
-
 .btnCV {
   padding: 2vh 3vw;
   font-weight: 600;
-  background-color: #FFD700;
+  background-color: var(--gold);
   color: black;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .btnCV:hover {
-  background-color: #1A73E8;
+  background-color: var(--deep-blue);
   color: white;
-}
-
-/* Second Section */
-
+} /* Second Section */
 .secondsection {
   padding: 10vw;
 }
 .secondsection h1 {
   font-size: 1.9rem;
-  text-decoration: underline #1A73E8; /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
 }
 .text-gray {
-  color: gray;
+  color: var(--gray);
 }
 .secondsection center {
   margin: 45px 0;
   font-size: 1.4rem;
-  color: #333333; /* Charcoal gray text */
+  color: var(--charcoal-gray); /* Charcoal gray text */
 }
 .secondsection hr {
   border: 0;
-  background-color: #1A73E8; /* Deep Blue divider */
+  background-color: var(--deep-blue); /* Deep Blue divider */
   height: 1.2px;
   margin: 20px 84px;
 }
-
 #outer-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .view-more {
   padding: 2vh 3vw;
   font-weight: 600;
-  background-color: #FFD700;
+  background-color: var(--gold);
   color: black;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
 }
-
 .view-more:hover {
-  background-color: #1A73E8;
+  background-color: var(--deep-blue);
   color: white;
-}
-
-/* Third Section */
-
+} /* Third Section */
 .outer-part h2 {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
   margin-bottom: 2vh;
-  text-decoration: underline #1A73E8; /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
 }
-
 .first-line {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-
 .first-line .box1 {
-  border: 2px solid #1A73E8; /* Deep Blue border */
+  border: 2px solid var(--deep-blue); /* Deep Blue border */
   padding: 5vw;
   border-radius: 20px;
   margin: 2.5vw;
   transition: 0.2s;
   font-weight: 600;
 }
-
 .first-line .box1:hover {
-  background-color: #1A73E8; /* Deep Blue background on hover */
+  background-color: var(--deep-blue); /* Deep Blue background on hover */
   color: white;
 }
-
 .first-line .box1 p {
   text-align: center;
-}
-
-/* Services */
-
+} /* Services */
 .service h2 {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
-  text-decoration: underline #1A73E8; /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
 }
-
 .outer-card {
   margin: 10vh 0;
   display: flex;
@@ -206,9 +196,8 @@ main hr {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .service-card {
-  border: 2px solid #1A73E8; /* Deep Blue border */
+  border: 2px solid var(--deep-blue); /* Deep Blue border */
   padding: 2vw;
   width: 90%;
   max-width: 300px;
@@ -217,37 +206,29 @@ main hr {
   border-radius: 20px;
   margin: 2vw;
 }
-
 .service-card:hover {
-  background-color: #1A73E8; /* Deep Blue on hover */
+  background-color: var(--deep-blue); /* Deep Blue on hover */
   color: white;
 }
-
 .service-card i {
   margin-top: 1.2vh;
   font-size: 2rem;
 }
-
 .service-card h3 {
   font-size: 1.5rem;
   margin-top: 1.1vh;
 }
-
 .service-card p {
   margin-top: 1.1vh;
-}
-
-/* Projects */
-
+} /* Projects */
 .four-section {
   margin-top: 10vh;
 }
-
 .four-section h2 {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
-  text-decoration: underline #1A73E8; /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
 }
 .cards {
   margin: 10vh 0;
@@ -258,7 +239,7 @@ main hr {
 }
 .cards .inner-cards {
   margin: 2.5vw;
-  border: 2px solid #1A73E8; /* Deep Blue border */
+  border: 2px solid var(--deep-blue); /* Deep Blue border */
   border-radius: 20px;
   width: 90%;
   max-width: 300px;
@@ -284,32 +265,26 @@ main hr {
   text-align: center;
   padding: 10px;
   background-color: white;
-  color: #1A73E8; /* Deep Blue text */
+  color: var(--deep-blue); /* Deep Blue text */
   font-weight: 700;
   border-radius: 10px;
   margin-top: 10px;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
 }
-
 .inner-cards a:hover {
-  background-color: #1A73E8; /* Deep Blue background */
+  background-color: var(--deep-blue); /* Deep Blue background */
   color: white;
-}
-
-/* Footer*/
-
+} /* Footer*/
 .outer {
   height: 45vh;
   width: 100%;
 }
-
 .outer h2 {
   text-align: center;
-  text-decoration: underline #1A73E8; /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
   font-size: 3rem;
 }
-
 .footer-link {
   display: flex;
   justify-content: center;
@@ -317,42 +292,37 @@ main hr {
   margin: 5vw;
   font-size: 1.6rem;
 }
-
 .footer-link a {
   margin-left: 2.2vw;
   font-weight: 700;
-  color: #1A73E8; /* Deep Blue */
+  color: var(--deep-blue); /* Deep Blue */
   transition: 0.3s;
   text-decoration: none;
 }
-
 .footer-link a:hover {
-  color: #FFD700; /* Gold on hover */
+  color: var(--gold); /* Gold on hover */
   text-decoration: underline white;
 }
-
 .web-link {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3vw;
 }
-
 .web-link a {
   margin-left: 3vw;
 }
-
 .web-link a img {
   width: 35px;
   height: 35px;
   border: 2px solid white;
+  background-color: var(--foot);
   border-radius: 50%;
   padding: 0.7vh;
 }
-
 .web-link a img:hover {
-  background-color: #1A73E8; /* Deep Blue */
-  border: 2px solid #1A73E8; /* Deep Blue border */
+  background-color: var(--deep-blue); /* Deep Blue */
+  border: 2px solid var(--deep-blue); /* Deep Blue border */
   transition: 0.3s;
 }
 
@@ -367,7 +337,7 @@ main hr {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  border: 2px solid #ccc;
+  border: 2px solid var(--gray);
   border-radius: 5px;
 }
 
@@ -386,12 +356,12 @@ main hr {
   width: 100%;
   padding: 10px 0;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--gray);
   border-radius: 5px;
 }
 
 .contact-form button {
-  background-color: #1A73E8; /* Deep Blue button */
+  background-color: var(--deep-blue); /* Deep Blue button */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -400,12 +370,12 @@ main hr {
 }
 
 .contact-form button:hover {
-  background-color: #FFD700; /* Gold on hover */
+  background-color: var(--gold); /* Gold on hover */
 }
 
 #hr {
   border: 0;
-  background-color: #1A73E8; /* Deep Blue divider */
+  background-color: var(--deep-blue); /* Deep Blue divider */
   height: 1.2px;
   margin: 40px 84px;
 }
