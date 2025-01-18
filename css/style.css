@@ -5,13 +5,12 @@
   --foot: white;
   --deep-blue: #1a73e8;
   --gold: #ffd700;
-  --gray: gray;
+  --black: black;
 
-.dark-theme{
-  --white: #000;
-  --charcoal-gray: #fff;
-}
-  
+  .dark-theme {
+    --white: #000;
+    --charcoal-gray: #fff;
+  }
 }
 * {
   margin: 0;
@@ -21,12 +20,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: var(--white); /* Soft white background */
-  color: var(--charcoal-gray); /* Charcoal gray text */
+  background-color: var(--white);
+  color: var(--charcoal-gray);
   font-family: "Poppins", sans-serif;
-} /* Navbar */
+}
+
+/* Navbar */
+
 #icon {
-  width: 30px;
   cursor: pointer;
 }
 .show {
@@ -37,7 +38,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  background-color: var(--deep-blue); /* Deep Blue background for navbar */
+  background-color: var(--deep-blue);
   color: white;
   position: fixed;
   top: 0;
@@ -63,17 +64,20 @@ nav ul li a {
   transition: 0.3s;
 }
 nav ul li a:hover {
-  color: var(--gold); /* Gold on hover */
+  color: var(--gold);
 }
 nav #img {
   display: none;
 } /* Main */
 main hr {
   border: 0;
-  background-color: var(--deep-blue); /* Deep Blue for divider */
+  background-color: var(--deep-blue);
   height: 1.2px;
   margin: 40px 84px;
-} /* First Section */
+}
+
+/* First Section */
+
 .firstsection {
   display: flex;
   justify-content: space-around;
@@ -88,10 +92,10 @@ main hr {
   font-weight: 700;
 }
 .text-blue {
-  color: var(--deep-blue); /* Deep Blue text */
+  color: var(--deep-blue);
 }
 #element {
-  color: var(--deep-blue); /* Deep Blue for highlighted text */
+  color: var(--deep-blue);
 }
 .rightsection img {
   border: 3px solid var(--deep-blue);
@@ -113,25 +117,28 @@ main hr {
 .btnCV:hover {
   background-color: var(--deep-blue);
   color: white;
-} /* Second Section */
+}
+
+/* Second Section */
+
 .secondsection {
   padding: 10vw;
 }
 .secondsection h1 {
   font-size: 1.9rem;
-  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue);
 }
 .text-gray {
-  color: var(--gray);
+  color: var(--black);
 }
 .secondsection center {
   margin: 45px 0;
   font-size: 1.4rem;
-  color: var(--charcoal-gray); /* Charcoal gray text */
+  color: var(--charcoal-gray);
 }
 .secondsection hr {
   border: 0;
-  background-color: var(--deep-blue); /* Deep Blue divider */
+  background-color: var(--deep-blue);
   height: 1.2px;
   margin: 20px 84px;
 }
@@ -154,13 +161,16 @@ main hr {
 .view-more:hover {
   background-color: var(--deep-blue);
   color: white;
-} /* Third Section */
+}
+
+/* Third Section */
+
 .outer-part h2 {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
   margin-bottom: 2vh;
-  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue);
 }
 .first-line {
   display: flex;
@@ -169,7 +179,7 @@ main hr {
   flex-wrap: wrap;
 }
 .first-line .box1 {
-  border: 2px solid var(--deep-blue); /* Deep Blue border */
+  border: 2px solid var(--deep-blue);
   padding: 5vw;
   border-radius: 20px;
   margin: 2.5vw;
@@ -177,17 +187,20 @@ main hr {
   font-weight: 600;
 }
 .first-line .box1:hover {
-  background-color: var(--deep-blue); /* Deep Blue background on hover */
+  background-color: var(--deep-blue);
   color: white;
 }
 .first-line .box1 p {
   text-align: center;
-} /* Services */
+}
+
+/* Services */
+
 .service h2 {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
-  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue);
 }
 .outer-card {
   margin: 10vh 0;
@@ -197,7 +210,7 @@ main hr {
   flex-wrap: wrap;
 }
 .service-card {
-  border: 2px solid var(--deep-blue); /* Deep Blue border */
+  border: 2px solid var(--deep-blue);
   padding: 2vw;
   width: 90%;
   max-width: 300px;
@@ -207,7 +220,7 @@ main hr {
   margin: 2vw;
 }
 .service-card:hover {
-  background-color: var(--deep-blue); /* Deep Blue on hover */
+  background-color: var(--deep-blue);
   color: white;
 }
 .service-card i {
@@ -228,7 +241,7 @@ main hr {
   text-align: center;
   font-size: 3rem;
   padding: 5vw;
-  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue);
 }
 .cards {
   margin: 10vh 0;
@@ -239,7 +252,7 @@ main hr {
 }
 .cards .inner-cards {
   margin: 2.5vw;
-  border: 2px solid var(--deep-blue); /* Deep Blue border */
+  border: 2px solid var(--deep-blue);
   border-radius: 20px;
   width: 90%;
   max-width: 300px;
@@ -265,7 +278,7 @@ main hr {
   text-align: center;
   padding: 10px;
   background-color: white;
-  color: var(--deep-blue); /* Deep Blue text */
+  color: var(--deep-blue);
   font-weight: 700;
   border-radius: 10px;
   margin-top: 10px;
@@ -273,16 +286,19 @@ main hr {
   text-decoration: none;
 }
 .inner-cards a:hover {
-  background-color: var(--deep-blue); /* Deep Blue background */
+  background-color: var(--deep-blue);
   color: white;
-} /* Footer*/
+}
+
+/* Footer*/
+
 .outer {
   height: 45vh;
   width: 100%;
 }
 .outer h2 {
   text-align: center;
-  text-decoration: underline var(--deep-blue); /* Deep Blue underline */
+  text-decoration: underline var(--deep-blue);
   font-size: 3rem;
 }
 .footer-link {
@@ -295,12 +311,12 @@ main hr {
 .footer-link a {
   margin-left: 2.2vw;
   font-weight: 700;
-  color: var(--deep-blue); /* Deep Blue */
+  color: var(--deep-blue);
   transition: 0.3s;
   text-decoration: none;
 }
 .footer-link a:hover {
-  color: var(--gold); /* Gold on hover */
+  color: var(--gold);
   text-decoration: underline white;
 }
 .web-link {
@@ -321,8 +337,8 @@ main hr {
   padding: 0.7vh;
 }
 .web-link a img:hover {
-  background-color: var(--deep-blue); /* Deep Blue */
-  border: 2px solid var(--deep-blue); /* Deep Blue border */
+  background-color: var(--deep-blue);
+  border: 2px solid var(--deep-blue);
   transition: 0.3s;
 }
 
@@ -361,7 +377,7 @@ main hr {
 }
 
 .contact-form button {
-  background-color: var(--deep-blue); /* Deep Blue button */
+  background-color: var(--deep-blue);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -370,12 +386,12 @@ main hr {
 }
 
 .contact-form button:hover {
-  background-color: var(--gold); /* Gold on hover */
+  background-color: var(--gold);
 }
 
 #hr {
   border: 0;
-  background-color: var(--deep-blue); /* Deep Blue divider */
+  background-color: var(--deep-blue);
   height: 1.2px;
   margin: 40px 84px;
 }

@@ -1,6 +1,5 @@
-/* Global Settings (e.g., Variables, General Styling) */
 :root {
-  --primary-color: #1A73E8;
+  --primary-color: #1a73e8;
   --font-size-large: 1.8rem;
   --font-size-medium: 1.4rem;
   --font-size-small: 1.2rem;
@@ -10,7 +9,6 @@
   --mobile-padding: 3vw;
 }
 
-/* General Improvements */
 @media screen and (max-width: 1010px) {
   .leftsection {
     font-size: var(--font-size-medium);
@@ -20,56 +18,63 @@
   }
 }
 
-/* Tablet Improvements */
+@media screen and (max-width: 941px) {
+  nav .left {
+    font-size: 1.2rem;
+  }
+  .menu li a {
+    font-size: 0.7rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  /* Refined Layout for Tablet */
   .firstsection {
     flex-direction: column-reverse;
     margin: 20vh 0;
-    justify-content: center; /* Ensure content is centered */
-    align-items: center; /* Center all content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
   }
-
+  .menu li a {
+    font-size: 1.1rem;
+  }
   .rightsection {
     display: flex;
-    justify-content: center; /* Horizontally center image */
-    align-items: center; /* Vertically center image */
-    width: 100%; /* Ensure the section spans the full width */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-bottom: 10vh;
   }
 
   .rightsection img {
-    width: 45vw; /* Adjust the image size */
-    max-width: 100%; /* Prevent the image from exceeding its container */
-    height: auto; /* Keep the aspect ratio of the image */
+    width: 45vw;
+    max-width: 100%;
+    height: auto;
   }
 
   .outer h2 {
     font-size: 2.2rem;
-    text-align: center; /* Center align for better readability */
+    text-align: center;
   }
 
   .leftsection {
     font-size: var(--font-size-medium);
-    text-align: center; /* Center text for smaller screens */
+    text-align: center;
   }
 
   .firstsection > div {
-    width: 100%; /* Make sections take full width on smaller tablets */
-    margin-bottom: 10vh; /* Add spacing between sections */
+    width: 100%;
+    margin-bottom: 10vh;
   }
 
-  /* Button Styling */
   .btnCV {
     padding: var(--btn-padding);
-    margin: 10%; /* Reduced margin to give more space for content */
-    font-size: 1.2rem; /* Slightly larger text for buttons */
+    margin: 10%;
+    font-size: 1.2rem;
   }
 
-  /* Navigation Updates */
   nav {
     height: 7vh;
-    padding: 15px;
+    padding: 15px 0;
   }
   nav ul {
     display: none;
@@ -82,28 +87,27 @@
     left: 0;
     width: 100%;
     text-align: center;
-    transition: transform 0.6s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
   nav ul li {
     margin: 12px 0;
   }
   nav #img {
     display: inline-block;
-    max-width: 130px; /* Smaller max-width for logo */
-    margin-bottom: 10px;
   }
 
-  /* Flexbox for Outer Sections */
   .outer {
     display: flex;
     flex-direction: column;
-    height: auto; /* Allow height to be more dynamic */
+    height: auto;
     margin-bottom: 15vh;
   }
 }
 
-/* Mobile Improvements */
 @media screen and (max-width: 500px) {
+  .left {
+    font-size: 2rem;
+  }
   .footer-link {
     font-size: 1.1rem;
   }
@@ -128,38 +132,5 @@
   }
   .nav-desktop {
     display: none;
-  }
-}
-
-/* Additional Enhancements for Navigation */
-@media screen and (max-width: 700px) {
-  nav {
-    padding: 15px;
-  }
-  nav ul.show {
-    top: 50px;
-    width: 100%;
-    background-color: var(--primary-color);
-    position: absolute;
-    left: 0;
-    text-align: center;
-    padding: 10px 0;
-  }
-  nav #img {
-    max-width: 150px;
-  }
-}
-
-/* Improved Navigation Transitions for Mobile */
-@media screen and (max-width: 500px) {
-  nav ul.show {
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
   }
 }
