@@ -239,7 +239,7 @@ main hr {
   margin-top: 1.1vh;
 }
 .information {
-  background-color: var(--charcoal-gray);
+  background-color: #333333;
   color: white;
   margin: 0 10vw;
   padding: 0 10vw;
