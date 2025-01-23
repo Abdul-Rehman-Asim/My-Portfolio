@@ -102,6 +102,9 @@
     height: auto;
     margin-bottom: 15vh;
   }
+  .info-text{
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -132,5 +135,8 @@
   }
   .nav-desktop {
     display: none;
+  }
+  .info-text{
+    font-size: 1.2rem;
   }
 }

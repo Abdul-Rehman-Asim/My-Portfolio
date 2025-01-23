@@ -9,6 +9,7 @@
 
   .dark-theme {
     --white: #000;
+    --black: white;
     --charcoal-gray: #fff;
   }
 }
@@ -206,7 +207,6 @@ main hr {
   margin: 10vh 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 .service-card {
@@ -219,10 +219,6 @@ main hr {
   border-radius: 20px;
   margin: 2vw;
 }
-.service-card:hover {
-  background-color: var(--deep-blue);
-  color: white;
-}
 .service-card i {
   margin-top: 1.2vh;
   font-size: 2rem;
@@ -230,10 +226,39 @@ main hr {
 .service-card h3 {
   font-size: 1.5rem;
   margin-top: 1.1vh;
+  padding-top: 2vh;
+}
+.service-card h4 {
+  color: var(--deep-blue);
+  margin-top: 20px
+}
+.service-card ul {
+  list-style: none;
 }
 .service-card p {
   margin-top: 1.1vh;
-} /* Projects */
+}
+.information {
+  background-color: var(--charcoal-gray);
+  color: white;
+  margin: 0 10vw;
+  padding: 0 10vw;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.info-text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.info-text a {
+  text-decoration: none;
+  color: var(--deep-blue);
+}
+
+/* Projects */
+
 .four-section {
   margin-top: 10vh;
 }
@@ -353,7 +378,7 @@ main hr {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  border: 2px solid var(--gray);
+  border: 2px solid var(--black);
   border-radius: 5px;
 }
 
@@ -372,7 +397,7 @@ main hr {
   width: 100%;
   padding: 10px 0;
   margin-bottom: 10px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--black);
   border-radius: 5px;
 }
 
