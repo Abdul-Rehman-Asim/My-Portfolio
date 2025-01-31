@@ -90,7 +90,7 @@ main hr {
 }
 .leftsection {
   font-size: 2.3rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 .text-blue {
   color: var(--deep-blue);
@@ -105,7 +105,8 @@ main hr {
   box-shadow: 0 0 20px var(--deep-blue), 0 0 30px var(--deep-blue),
     0 0 40px var(--deep-blue), 0 0 50px;
 }
-.btnCV {
+.hire-btn {
+  font-size: 1.1rem;
   padding: 2vh 3vw;
   font-weight: 600;
   background-color: var(--gold);
@@ -115,7 +116,7 @@ main hr {
   cursor: pointer;
   transition: 0.3s;
 }
-.btnCV:hover {
+.hire-btn:hover {
   background-color: var(--deep-blue);
   color: white;
 }
