@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://abdul-rehman-asim.github.io/my-portfolio/sitemap.xml
