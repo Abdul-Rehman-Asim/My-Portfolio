@@ -9,190 +9,182 @@
       name="description"
       content="My name is Abdul-Rehman-Asim. This is my perosnal Portfolio In this is Portfolio I show my skills qualifications and you can see my skills by this website."
     />
+    <!-- Box-icon -->
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <header>
       <nav>
-        <img
-          id="img"
-          src="Images/menu.svg"
-          alt="moon"
-          class="menu-icon"
-          onclick="toggleMenu()"
-        />
         <div class="left">AbdulRehman's Portfolio</div>
+        <i id="menu" class='bx bx-menu'></i>
         <div class="right">
-          <ul class="menu">
-            <li><a href="/My-Portfolio/">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><img src="Images/moon.svg" id="icon" /></li>
-          </ul>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact Me</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <!-- First Section -->
+      <!-- Home Section -->
 
-      <section class="firstsection">
+      <section class="firstsection" id="home">
         <div class="leftsection">
-          Hi, My name is <span class="text-blue">AbdulRehman</span>
-          <div>and I am passionate</div>
-          <span id="element"></span>
-          <br />
-          <button class="hire-btn">Hire Me</button>
+          <h3>Hi, My name is</h3>
+          <h1>AbdulRehman</h1>
+          <h3>and I am <span id="element"></span></h3>
+          <p>
+            I'm a creative and dedicated web developer turning ideas into
+            interactive, user-friendly digital experiences
+          </p>
+          <a href="#contact" class="btn">Hire Me</a>
         </div>
         <div class="rightsection">
-          <img src="Images/bg1.png" alt="main-pic" />
+          <img src="Images/bg1.png" id="icon" alt="main-pic"/>
+          <p>Click The Image To See Magic.</p>
         </div>
       </section>
-      <hr />
 
-      <!-- Second Section -->
+      <!-- About Section -->
 
-      <section class="secondsection">
-        <span class="text-gray">Who I am</span>
-        <h1>About Me</h1>
-        <center>
-          Hey there, I'm AbdulRehman, and I'm all about crafting digital magic
-          as a full stack web developer and web designer. With a year under my
-          belt in the industry, I've honed my skills in both the nuts and bolts
-          of coding and the artistry of design. Whether it's building intuitive
-          user interfaces or architecting robust back-end systems, I thrive on
-          the challenge of creating websites that not only look stunning but
-          also function flawlessly. I'm passionate about staying on the cutting
-          edge of technology and design trends, always eager to learn and grow.
-          Got a project in mind? Let's team up and turn your ideas into reality!
-        </center>
-        <div id="outer-btn">
-          <a href="about.html" class="view-more">View More</a>
+      <section class="secondsection" id="about">
+        <div class="about-img">
+          <img src="Images/about-per.png" alt="about-pic" />
+        </div>
+        <div class="about-cont">
+          <h2>About Me</h2>
+          <h3>Full Stack Web Developer</h3>
+          <p>
+            Hey there, I'm AbdulRehman, and I'm all about crafting digital magic
+            as a full stack web developer and web designer. With a year under my
+            belt in the industry, I've honed my skills in both the nuts and
+            bolts of coding and the artistry of design. Whether it's building
+            intuitive user interfaces or architecting robust back-end systems, I
+            thrive on the challenge of creating websites that not only look
+            stunning but also function flawlessly. I'm passionate about staying
+            on the cutting edge of technology and design trends, always eager to
+            learn and grow. Got a project in mind? Let's team up and turn your
+            ideas into reality!
+          </p>
+          <a href="#" class="btn">View More</a>
         </div>
       </section>
-      <hr />
-      <br />
 
-      <!-- Third Section -->
+      <!-- Serviecs section-->
 
-      <section class="outer-part">
-        <h2>My Skills</h2>
-        <div class="first-line">
-          <div class="box1">
-            <img src="Images/html.png" alt="html" />
-            <p>HTML</p>
-          </div>
-          <div class="box1">
-            <img src="Images/css.png" alt="css" />
-            <p>CSS</p>
-          </div>
-          <div class="box1">
-            <img src="Images/js.png" alt="js" />
-            <p>JavaScript</p>
-          </div>
-          <div class="box1">
-            <img src="Images/bootstrap.svg" alt="bootstrap" />
-            <p>BootStrap</p>
-          </div>
-          <div class="box1">
-            <img src="Images/tailwind.png" alt="tailwind" />
-            <p>Tailwind CSS</p>
-          </div>
-          <div class="box1">
-            <img src="Images/Vue.png" alt="vuejs" />
-            <p>Vue Js</p>
-          </div>
-          <div class="box1">
-            <img src="Images/python.png" alt="python" />
-            <p>Python</p>
-          </div>
-          <div class="box1">
-            <img src="Images/django.png" alt="django" />
-            <p>Django</p>
-          </div>
-          <div class="box1">
-            <img src="Images/Git.png" alt="git" />
-            <p>Git & Github</p>
-          </div>
-          <div class="box1">
-            <img src="Images/mysql.png" alt="mysql" />
-            <p>My SQL</p>
-          </div>
-        </div>
-      </section>
-      <hr />
-
-      <!-- Serviecs-->
-
-      <section id="service" class="service">
+      <section class="services" id="services">
         <h2>Services</h2>
-        <div class="outer-card">
+
+        <div class="service-cont">
           <div class="service-card">
-            <i class="fa-solid fa-code"></i>
+            <i class="bx bx-code-alt"></i>
             <h3>Web Development</h3>
             <p>
               I create modern, fast, and user-friendly websites to help your
               business grow online.
             </p>
-            <h4>Languages:</h4>
-            <p>HTML, CSS, JavaScript, React JS, Django</p>
-            <h4>Dev Tools:</h4>
-            <ul>
-              <li>Bootstrap</li>
-              <li>Github</li>
-              <li>Tailwind CSS</li>
-              <li>VS Code</li>
-            </ul>
+            <a href="" class="btn">Read More</a>
           </div>
+
           <div class="service-card">
-            <i class="fa-solid fa-paintbrush"></i>
-            <h3>Web Designing</h3>
+            <i class="bx bxs-paint"></i>
+            <h3>Graphics Designing</h3>
             <p>
-              I design beautiful, clean, and professional websites that leave a
+              I design beautiful, clean, and professional graphics that leave a
               lasting impression.
             </p>
-            <h4>Things I enjoy designing:</h4>
-            <p>Web, Logos, Banners</p>
-            <h4>Design Tools:</h4>
-            <ul>
-              <li>Canva</li>
-              <li>Figma</li>
-            </ul>
+            <a href="" class="btn">Read More</a>
           </div>
+
           <div class="service-card">
-            <i class="fa-solid fa-photo-film"></i>
+            <i class="bx bx-film"></i>
             <h3>Video Editing</h3>
             <p>
               I deliver professional video editing for stunning, engaging, and
               visually captivating results.
             </p>
-            <h4>Things I enjoy Editing:</h4>
-            <p>Reels Editing, Shorts Editing, Long Video Editing</p>
-            <h4>Editing Tools:</h4>
-            <ul>
-              <li>CapCut</li>
-            </ul>
+            <a href="" class="btn">Read More</a>
           </div>
         </div>
       </section>
-      <div class="information">
-        <p class="info-text">
-          Interested in working together? We should queue up a time to chat.
-          <a href="contact.html">Contact Now</a>!
-        </p>
-      </div>
-      <hr />
 
-      <!-- Projects -->
+      <!-- Skill section -->
 
-      <section id="projects" class="four-section">
+      <section class="skills" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-row">
+          <div class="skills-column">
+            <h3 class="title">Coding Skills</h3>
+
+            <div class="skills-box">
+              <div class="skills-content">
+                <div class="progress">
+                  <h3>HTML <span>90%</span></h3>
+                  <div class="bar"><span></span></div>
+                </div>
+
+                <div class="progress">
+                  <h3>CSS <span>75%</span></h3>
+                  <div class="bar"><span></span></div>
+                </div>
+
+                <div class="progress">
+                  <h3>JavaScript <span>50%</span></h3>
+                  <div class="bar"><span></span></div>
+                </div>
+
+                <div class="progress">
+                  <h3>React Js <span>40%</span></h3>
+                  <div class="bar"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3 class="title">More Skills</h3>
+
+            <div class="skills-box">
+              <div class="skills-content">
+                <div class="progress">
+                  <h3>BootStrap5 <span>70%</span></h3>
+                  <div class="bar"><span></span></div>
+                </div>
+
+                <div class="progress">
+                  <h3>TailwindCSS <span>65%</span></h3>
+                  <div class="bar"><span></span></div>
+                </div>
+
+                <div class="progress">
+                  <h3>Python <span>40%</span></h3>
+                  <div class="bar"><span></span></div>
+                </div>
+
+                <div class="progress">
+                  <h3>Django <span>55%</span></h3>
+                  <div class="bar"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+
+      <section class="four-section" id="projects">
         <h2>Projects</h2>
         <div class="cards">
           <div class="inner-cards">
@@ -201,6 +193,7 @@
             <a
               href="https://abdul-rehman-asim.github.io/Vintage-Vogue-by-AbdulRehman-Asim/"
               target="_blank"
+              class="btn"
               >Visit Now</a
             >
           </div>
@@ -210,6 +203,7 @@
             <a
               href="https://abdul-rehman-asim.github.io/BMI-Calculator/"
               target="_blank"
+              class="btn"
               >Visit Now</a
             >
           </div>
@@ -218,16 +212,33 @@
       <hr />
     </main>
 
+    <!-- Contact Me section-->
+
+    <section class="contact-form" id="contact">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+        </div>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="7"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <a class="btn">Send Message</a>
+      </form>
+    </section>
+
     <!-- Footer -->
 
     <footer>
-      <div class="outer">
+      <div class="footer">
         <h2>AbdulRehman Web Developer</h2>
-        <div class="footer-link">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact Us</a>
-        </div>
         <div class="web-link">
           <a
             href="https://www.linkedin.com/in/abdulrehman-asim-32b9542b3/"
@@ -248,11 +259,21 @@
             ><img src="Images/upwork.svg" alt="upwork"
           /></a>
         </div>
+        <div class="last-line">
+          <p class="footer-text">
+            Copyright &copy; 2025 by AbdulRehman Asim | All Rights Reserved
+          </p>
+          <div class="icon-top">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/autotype.js" defer></script>
   </body>
-  <!-- JavaScript -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script src="js/script.js" defer></script>
-  <script src="js/autotype.js" defer></script>
 </html>

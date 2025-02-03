@@ -1,142 +1,110 @@
-:root {
-  --primary-color: #1a73e8;
-  --font-size-large: 1.8rem;
-  --font-size-medium: 1.4rem;
-  --font-size-small: 1.2rem;
-  --font-size-tiny: 0.9rem;
-  --btn-padding: 2.5vh 3vw;
-  --tablet-padding: 4vw;
-  --mobile-padding: 3vw;
-}
-
-@media screen and (max-width: 1010px) {
-  .leftsection {
-    font-size: var(--font-size-medium);
-  }
-  .rightsection img {
-    width: 25vw;
+@media (max-width: 1262px) {
+  html {
+    font-size: 85%;
   }
 }
 
-@media screen and (max-width: 941px) {
-  nav .left {
-    font-size: 1.2rem;
-  }
-  .menu li a {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .firstsection {
-    flex-direction: column-reverse;
-    margin: 20vh 0;
-    justify-content: center;
-    align-items: center;
-  }
-  .menu li a {
-    font-size: 1.1rem;
-  }
-  .rightsection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10vh;
-  }
-
-  .rightsection img {
-    width: 45vw;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .outer h2 {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .leftsection {
-    font-size: var(--font-size-medium);
-    text-align: center;
-  }
-
-  .firstsection > div {
-    width: 100%;
-    margin-bottom: 10vh;
-  }
-
-  .hire-btn {
-    padding: var(--btn-padding);
-    margin: 10%;
-    font-size: 1.2rem;
+@media (max-width: 1142px) {
+  html {
+    font-size: 80%;
   }
 
   nav {
-    height: 7vh;
-    padding: 15px 0;
-  }
-  nav ul {
-    display: none;
-  }
-  nav ul.show {
-    flex-direction: column;
-    position: absolute;
-    background-color: var(--primary-color);
-    top: 100%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    transition: transform 0.2s ease-in-out;
-  }
-  nav ul li {
-    margin: 12px 0;
-  }
-  nav #img {
-    display: inline-block;
+    padding: 2rem 3%;
   }
 
-  .outer {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    margin-bottom: 15vh;
+  section {
+    padding: 9rem 3% 1rem;
   }
-  .info-text{
-    font-size: 1.5rem;
+
+  .contact-form {
+    min-height: auto;
+  }
+
+  .footer {
+    padding: 2rem 3%;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .left {
-    font-size: 2rem;
-  }
-  .footer-link {
-    font-size: 1.1rem;
-  }
-  .rightsection img {
-    width: 50vw;
-  }
-  .secondsection center {
-    font-size: var(--font-size-tiny);
-  }
-  #element {
-    font-size: 1.1rem;
-  }
-  .hire-btn {
-    padding: 2vh 3vw;
-    margin: 5%;
-  }
-  .outer h2 {
-    font-size: 1.8rem;
-  }
-  .nav-mobile {
+@media (max-width: 955px) {
+  #menu {
     display: block;
   }
-  .nav-desktop {
+
+  .right {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--deep-blue);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: none;
   }
-  .info-text{
-    font-size: 1.2rem;
+
+  .right.active {
+    display: block;
+  }
+
+  .right a {
+    display: block;
+    font-size: 1.3rem;
+    margin: 1.6rem 0;
+  }
+
+  .firstsection {
+    flex-direction: column;
+  }
+
+  .leftsection h3 {
+    font-size: 2rem;
+  }
+
+  .leftsection h1 {
+    font-size: 3rem;
+  }
+
+  .rightsection img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .secondsection {
+    flex-direction: column-reverse;
+  }
+
+  .about-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-form form .input-box input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 365px) {
+  .rightsection img {
+    width: 90vw;
+  }
+
+  .about-img img {
+    width: 90vw;
+  }
+
+  .last-line {
+    flex-direction: column-reverse;
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-top: 2rem;
   }
 }
