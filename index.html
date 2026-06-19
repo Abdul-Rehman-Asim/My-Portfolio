@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,7 +23,7 @@
     <header>
       <nav>
         <div class="left">AbdulRehman's Portfolio</div>
-        <i id="menu" class='bx bx-menu'></i>
+        <i id="menu" class="bx bx-menu"></i>
         <div class="right">
           <a href="#home">Home</a>
           <a href="#about">About</a>
@@ -42,16 +42,19 @@
         <div class="leftsection">
           <h3>Hi, My name is</h3>
           <h1>AbdulRehman</h1>
-          <h3>and I am <span id="element"></span></h3>
+          <h3>and I am <span id="element">Web Developer</span></h3>
           <p>
-            I'm a creative and dedicated web developer turning ideas into
-            interactive, user-friendly digital experiences
+            I build responsive websites, modern landing pages, and professional
+            brand designs that help businesses grow online.
           </p>
+          <div class="buttons"></div>
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="" class="btn">Download CV</a>
           <a href="#contact" class="btn">Hire Me</a>
         </div>
         <div class="rightsection">
-          <img src="Images/bg1.png" id="icon" alt="main-pic"/>
-          <p>Click The Image To See Magic.</p>
+          <img src="Images/bg1.png" id="icon" alt="main-pic" />
+          <p>Click The Image For Dark Mode.</p>
         </div>
       </section>
 
@@ -90,8 +93,7 @@
             <i class="bx bx-code-alt"></i>
             <h3>Web Development</h3>
             <p>
-              I create modern, fast, and user-friendly websites to help your
-              business grow online.
+              Responsive websites, portfolios, landing pages, business websites.
             </p>
             <a href="" class="btn">Read More</a>
           </div>
@@ -100,8 +102,7 @@
             <i class="bx bxs-paint"></i>
             <h3>Graphics Designing</h3>
             <p>
-              I design beautiful, clean, and professional graphics that leave a
-              lasting impression.
+              Wordmark, Monogram, Abstract, Minimalist logos.
             </p>
             <a href="" class="btn">Read More</a>
           </div>
@@ -122,62 +123,40 @@
 
       <section class="skills" id="skills">
         <h2>My Skills</h2>
-
-        <div class="skills-row">
-          <div class="skills-column">
-            <h3 class="title">Coding Skills</h3>
-
-            <div class="skills-box">
-              <div class="skills-content">
-                <div class="progress">
-                  <h3>HTML <span>90%</span></h3>
-                  <div class="bar"><span></span></div>
-                </div>
-
-                <div class="progress">
-                  <h3>CSS <span>75%</span></h3>
-                  <div class="bar"><span></span></div>
-                </div>
-
-                <div class="progress">
-                  <h3>JavaScript <span>50%</span></h3>
-                  <div class="bar"><span></span></div>
-                </div>
-
-                <div class="progress">
-                  <h3>React Js <span>40%</span></h3>
-                  <div class="bar"><span></span></div>
-                </div>
-              </div>
-            </div>
+        <div class="tech_container">
+          <div class="technologies">
+            <img src="Images/html.png" alt="" />
+            <p>HTML</p>
           </div>
-
-          <div class="skills-column">
-            <h3 class="title">More Skills</h3>
-
-            <div class="skills-box">
-              <div class="skills-content">
-                <div class="progress">
-                  <h3>BootStrap5 <span>70%</span></h3>
-                  <div class="bar"><span></span></div>
-                </div>
-
-                <div class="progress">
-                  <h3>TailwindCSS <span>65%</span></h3>
-                  <div class="bar"><span></span></div>
-                </div>
-
-                <div class="progress">
-                  <h3>Python <span>40%</span></h3>
-                  <div class="bar"><span></span></div>
-                </div>
-
-                <div class="progress">
-                  <h3>Django <span>55%</span></h3>
-                  <div class="bar"><span></span></div>
-                </div>
-              </div>
-            </div>
+          <div class="technologies">
+            <img src="Images/css.png" alt="" />
+            <p>CSS</p>
+          </div>
+          <div class="technologies">
+            <img src="Images/js.png" alt="" />
+            <p>JAVASCRIPT</p>
+          </div>
+          <div class="technologies">
+            <img src="Images/django.png" alt="" />
+            <p>DJANGO</p>
+          </div>
+        </div>
+        <div class="tech_container2">
+            <div class="technologies">
+            <img src="Images/Git.png" alt="" />
+            <p>GIT</p>
+          </div>
+          <div class="technologies">
+            <img src="Images/mysql.png" alt="" />
+            <p>MYSQL</p>
+          </div>
+          <div class="technologies">
+            <img src="Images/python.png" alt="" />
+            <p>PYTHON</p>
+          </div>
+          <div class="technologies">
+            <img src="Images/tailwind.png" alt="" />
+            <p>TAILWIND CSS</p>
           </div>
         </div>
       </section>
@@ -274,6 +253,5 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="js/script.js" defer></script>
-    <script src="js/autotype.js" defer></script>
   </body>
 </html>
